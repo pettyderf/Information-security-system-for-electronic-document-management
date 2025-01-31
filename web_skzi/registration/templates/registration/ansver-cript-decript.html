@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Вывод</title>
+	<link rel="stylesheet" href="{% static 'registration/style_forms.css' %}">
+</head>
+
+<body>
+
+  <div class="form">
+    <h1>{{ans}}</h1>
+    <p>{{ansver}}</p>
+    <a class="buttonlogin" href="{% url 'home' %}">назад</a>
+  </div>
+
+</body>
+</html>

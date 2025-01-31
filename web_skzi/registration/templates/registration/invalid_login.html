@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Неверный логин</title>
+	<link rel="stylesheet" href="{% static 'registration/style_forms.css' %}">
+</head>
+
+<body>
+
+  <div class="form">
+    <h1>Извините</h1>
+    <p>Такой учетной записи не существует, проверьте данные и <a class="buttonlogin" href="{% url 'login' %}">попытайтесь еще раз</a>.</p>
+  </div>
+
+</body>
+</html>

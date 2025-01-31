@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BAN</title>
+	<link rel="stylesheet" href="{% static 'registration/style_forms.css' %}">
+</head>
+
+<body>
+
+  <div class="form">
+    <h1>{{ form.username }}!</h1>
+    <p>Ваша учетная запись заблокированна, <a class="buttonlogin" href="{% url 'home' %}">обратно</a>.</p>
+  </div>
+
+</body>
+</html>

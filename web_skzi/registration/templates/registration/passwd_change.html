@@ -1,0 +1,29 @@
+{% load static %}
+
+<!doctype html>
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Смена пароля</title>
+	<link rel="stylesheet" href="{% static 'registration/style_forms.css' %}">
+</head>
+
+<body>
+  {% block content %}
+    <h1>Change you password</h1>
+    <p>Use the form below to change your password.</p>
+    <form action="." method="post" class="form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p><input type="submit" value="Change"></p>
+    </form>
+{% endblock %}
+
+
+  </form>
+  
+  <script>
+
+  </script>
+
+</body>

@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Добро пожаловать</title>
+	<link rel="stylesheet" href="{% static 'registration/style_forms.css' %}">
+</head>
+
+<body>
+
+  <div class="form">
+    <h1>Привет {{ new_user.first_name }}!</h1>
+    <p>Ваш аккаунт был успешно создан, теперь вы можете <a class="buttonlogin" href="{% url 'login' %}">войти</a>.</p>
+  </div>
+
+</body>
+</html>

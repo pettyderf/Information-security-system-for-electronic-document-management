@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Уведомление</title>
+	<link rel="stylesheet" href="{% static 'registration/style_forms.css' %}">
+</head>
+
+<body>
+
+  <div class="form">
+    <h1>Обмен ключами</h1>
+    <p>{{ansver}}, <a class="buttonlogin" href="{% url 'home' %}">назад</a>.</p>
+  </div>
+
+</body>
+</html>
